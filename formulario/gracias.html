@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-family: sans-serif;
+            height: 100vh;
+        }
+        div{
+            background-color: beige;
+            box-shadow: 0 0 100px rgba(247, 2, 2, 0.2);
+            padding: 0px 30px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="datos"></p>
+    </div>
+    <script>
+        const nombre = localStorage.getItem("nombre");
+        const correo = localStorage.getItem("correo");
+        const mensaje = localStorage.getItem("mensaje");
+
+        const parrafo = document.getElementById("datos");
+        parrafo.innerHTML=`Formulario enviado satisfactoriamente:<br><br>
+                                                    <strong>Nombre: </strong>${nombre}<br>
+                                                    <strong>Correo: </strong>${correo}<br>
+                                                    <strong>Mensaje: </strong>${mensaje}<br><br>
+                                                    Gracias!!`
+    </script>
+</body>
+</html>

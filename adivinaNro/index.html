@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Adivina el número entre 1 y 100</h1>
+        
+        <form id="form">
+            <input type="number" id="guessInput" placeholder="Ingresa tu número" min="1" max="100" required>
+            <button type="submit" id="submitGuess">Adivinar</button>
+        </form>
+
+        <p id="message">Ingresa un número para comenzar...</p>
+        <p id="attempts">Historial de intentos:</p>
+        <ul id="attempts-list"></ul>
+        
+        <button id="resetBtn">Reiniciar juego 🔄</button>
+    </div>
+    <script src="modelo.js"></script>
+    <script src="vista.js"></script>
+    <script src="controlador.js"></script>
+</body>
+</html>

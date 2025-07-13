@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+}
+h1{
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px; /* Limita el ancho máximo */
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    width: 100%;
+}
+
+#guessInput {
+    flex: 1 1 200px; /* Crece, reduce y tiene un tamaño base de 200px */
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón de adivinar */
+#submitGuess {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#submitGuess:hover {
+    background-color: #2980b9;
+}
+
+#resetBtn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#resetBtn:hover {
+    background-color: #c0392b;
+}
+#attempts{
+    display: none;
+}
+#attempts-list,
+#message,
+#attempts
+{
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: center;
+    color: #2c3e50;
+}
+
+@media (max-width: 500px) {
+    #form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #submitGuess {
+        width: 100%;
+    }
+    }
+
+

@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskList</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Task List</h1>
+    <input type="text" id="nueva-tarea" placeholder="Escribe tu nueva tarea...">
+    <button id="btn-agregar">Agregar</button>
+    <button id="btn-borrar-todo">Borrar todo</button>
+    <div class="contenedor">
+        <div>
+            <h2>Lista de todas las tareas</h2>
+            <ul id="lista-tareas"></ul>
+        </div>
+        <div>
+            <h2>Lista de tareas acabadas</h2>
+            <ul id="lista-tareas-acabadas"></ul>
+        </div>
+        <div>
+            <h2>Lista de tareas inconclusas</h2>
+            <ul id="lista-tareas-inconclusas"></ul>
+        </div>
+    </div>
+    <script src="modelo.js"></script>
+    <script src="vista.js"></script>
+    <script src="controlador.js"></script>
+</body>
+</html>

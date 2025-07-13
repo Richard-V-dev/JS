@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+    background-color: greenyellow;
+    color: black;
+}
+input, button { 
+    padding: 0.5rem; margin: auto;
+}
+ul{
+    /*margin-top: 2rem;*/
+    max-width: 300px;
+    margin: 3rem auto;
+}
+li { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 0.5rem; 
+}
+.completado { 
+    text-decoration: line-through;
+    color: gray; 
+}
+h1{
+    color: red;
+}
+.botones{
+    display: inline-flex;
+    gap: 2px;
+}
+.textTask{
+    text-align: left;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.textCompleatedTask{
+    color:brown;
+    font-weight: bolder;
+}
+.textUncompleatedTask{
+    color:coral;
+    font-weight: bolder;
+}

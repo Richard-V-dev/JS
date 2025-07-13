@@ -1,0 +1,20 @@
+body{
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 2rem;
+}
+h1{
+    color:red;
+}
+input{
+    padding: 10px;
+}
+.fila{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    gap:10px;
+    margin-bottom: 1rem;
+    margin: 10px;
+}
+
