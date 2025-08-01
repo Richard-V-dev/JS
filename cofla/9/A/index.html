@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form autocomplete="off" id="form">
+        <h2>Inscripción de materias adeudadas</h2>
+        <input type="text" placeholder="Nombre completo" id="fullName" required="">
+        <input type="text" placeholder="Email" id="email" required="">
+        <input type="text" placeholder="Materia adeudada" id="subject" required="">
+        <input type="submit" value="Enviar" id="btnSubmit">
+        <p id="resultado"></p>
+    </form>
+    <script src="modelo.js"></script>
+    <script src="vista.js"></script>
+    <script src="controlador.js"></script>
+</body>
+</html>

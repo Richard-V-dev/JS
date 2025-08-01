@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Pokémon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🔎 Buscar Pokémon</h1>
+
+    <input type="text" id="pokeInput" placeholder="Escribe nombre o número">
+    <button id="buscarBtn">Buscar</button>
+
+    <div id="resultado"></div>
+
+    <script src="modelo.js"></script>
+    <script src="vista.js"></script>
+    <script src="controlador.js"></script>
+    <script>
+        const modelo = new PokeModelo();
+        const vista = new PokeVista();
+        const controlador = new PokeControlador(modelo, vista);
+    </script>
+</body>
+</html>

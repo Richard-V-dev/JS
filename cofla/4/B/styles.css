@@ -1,0 +1,21 @@
+body{
+    background-color: green;
+    color: white;
+    font-size: 20;
+}
+h1{
+    text-align: center;
+    color: red;
+}
+span{
+    font-weight: bolder;
+    margin-left: 50px;
+}
+h2{
+    color: violet;
+    margin-left: 100px;
+    font-weight: bolder;
+}
+div{
+    margin-left:40%;
+}
